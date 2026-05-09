@@ -10,6 +10,9 @@
         elseif ($mark >= 33) {
             return "Third Division";
         }
+        elseif ($mark < 0 || $mark > 100) {
+            throw new InvalidArgumentException("Mark must be from 0 to 100");
+        }
         else {
             return "Failed";
         }
