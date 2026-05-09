@@ -65,14 +65,3 @@ By the end of this sprint you should be comfortable with:
 * Writing simple functions
 * Using loops and conditionals
 * Structuring small programs
-
----
-# 💡 Answer to your question
-👉 Installation instructions:
-- ✔ ONLY in main README
-- ❌ not inside each exercise file
-- ❌ not repeated per exercise
----
-If you want, I can also:
-- [add a **“how to debug PHP in VS Code” section**](chatgpt://followup-prompt?start_index=2230&end_index=2277)
-- or [convert this into a **professional GitHub portfolio README (with badges + screenshots style)**](chatgpt://followup-prompt?start_index=2283&end_index=2377)
