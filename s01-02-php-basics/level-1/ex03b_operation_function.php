@@ -1,5 +1,11 @@
 <?php
 
+    function validateDivisor($secondNumber){
+        if ($secondNumber === 0) {
+            throw new InvalidArgumentException("Cannot divide by zero");
+        }
+    }
+
     function Operations(int|float $firstNumber, int|float $secondNumber, string $operator): int|float {
         
         $operator = strtolower(trim($operator));
@@ -29,18 +35,12 @@
 
     }
 
-    function validateDivisor($secondNumber){
-        if ($secondNumber === 0) {
-            throw new InvalidArgumentException("Cannot divide by zero");
-        }
-    }
-
-/*     // Tests 
+     // Tests 
     echo Operations(2, 4, "aDd") . "\n";
     echo Operations(3.0, 5.1, "subtraCt"). "\n";
     echo Operations(3.0, 3.0, "MULTIPLY  "). "\n";
     echo Operations(4, 5, "  divide"). "\n";
     // divide by 0 echo Operations(4, 0, "divide");
-    // invalid operation echo Operations(2, 4, "22"); */
+    // invalid operation echo Operations(2, 4, "22");
 
 ?>

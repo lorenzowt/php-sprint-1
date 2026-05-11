@@ -1,6 +1,4 @@
 <?php
-
-    runProgram(9999, 0, 4500);
     
     function runProgram(int $score1, int $score2, int $score3): void {
         validateScores($score1, $score2, $score3);
@@ -44,6 +42,7 @@
             throw new InvalidArgumentException("Scores can't be higher than 9999");
         }
     }
-
+    
+    runProgram(9999, 0, 4500);
     
 ?>
