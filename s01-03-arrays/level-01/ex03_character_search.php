@@ -1,6 +1,6 @@
 <?php
 
-    function characterSearch(array $wordList, string $char): bool {
+    function searchCharacter(array $wordList, string $char): bool {
         $charFound = false;  
 
         foreach ($wordList as $word) {
@@ -14,6 +14,6 @@
     $wordList = ["archer", "mage", "tank"];
     $char = "b";
     
-    echo (characterSearch($wordList, $char) ? "True" : "False");
+    echo (searchCharacter($wordList, $char) ? "True" : "False");
 
 ?>

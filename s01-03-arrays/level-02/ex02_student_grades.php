@@ -1,6 +1,6 @@
 <?php
 
-    function CalculateAverageScore(array $students): void {
+    function calculateAverageScore(array $students): void {
         
         $classTotal = 0;
         $scoresCount = 0;
