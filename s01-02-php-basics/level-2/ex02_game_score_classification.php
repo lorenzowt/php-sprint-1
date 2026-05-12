@@ -1,6 +1,6 @@
 <?php
     
-    function runProgram(int $score1, int $score2, int $score3): void {
+    function calculateScores(int $score1, int $score2, int $score3): void {
         validateScores($score1, $score2, $score3);
         echo "The sum of $score1, $score2 and $score3 equals: " . sumScores($score1, $score2, $score3) . "\n";
         echo "The average score of $score1, $score2 and $score3 is: " . calculateAverageScore($score1, $score2, $score3) . "\n";
@@ -43,6 +43,10 @@
         }
     }
     
-    runProgram(9999, 0, 4500);
-    
+    try {
+        calculateScores(9999, 0, 4500);
+    }
+    catch(Exception $e) {
+        echo $e->getMessage();
+    }
 ?>

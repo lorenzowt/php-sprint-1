@@ -10,7 +10,7 @@ echo "String: $string\n";
 echo "Double: $double\n";
 echo "Boolean: " . ($boolean ? "true" : "false") . "\n";
 
-const NAME = "LORENZO MARCO";
+define("NAME", "Lorenzo Marco");
 
 echo "Constant NAME: " . NAME;
 

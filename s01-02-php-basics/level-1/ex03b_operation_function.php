@@ -6,7 +6,7 @@
         }
     }
 
-    function Operations(int|float $firstNumber, int|float $secondNumber, string $operator): int|float {
+    function calculate(int|float $firstNumber, int|float $secondNumber, string $operator): int|float {
         
         $operator = strtolower(trim($operator));
 
@@ -35,12 +35,17 @@
 
     }
 
-     // Tests 
-    echo Operations(2, 4, "aDd") . "\n";
-    echo Operations(3.0, 5.1, "subtraCt"). "\n";
-    echo Operations(3.0, 3.0, "MULTIPLY  "). "\n";
-    echo Operations(4, 5, "  divide"). "\n";
-    // divide by 0 echo Operations(4, 0, "divide");
-    // invalid operation echo Operations(2, 4, "22");
+    try{ 
+        echo calculate(2, 4, "aDd") . "\n";
+        echo calculate(3.0, 5.1, "subtraCt"). "\n";
+        echo calculate(3.0, 3.0, "MULTIPLY  "). "\n";
+        echo calculate(4, 5, "  divide"). "\n";
+        echo calculate(4, 0, "divide");
+        echo calculate(2, 0, "subtract");
+        echo calculate(2, 0, "divide");
+    }
+    catch (Exception $e) {
+        echo $e->getMessage();
+    }
 
 ?>

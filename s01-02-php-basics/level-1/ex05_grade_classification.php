@@ -18,8 +18,13 @@
         }
     }
 
-    echo assignDivision(71);
-    echo assignDivision(45);
-    echo assignDivision(33);
-    echo assignDivision(32);
+    try {
+        echo assignDivision(71);
+        echo assignDivision(45);
+        echo assignDivision(33);
+        echo assignDivision(32);
+    }
+    catch (Exception $e) {
+        echo $e->getMessage();
+    }
 ?>

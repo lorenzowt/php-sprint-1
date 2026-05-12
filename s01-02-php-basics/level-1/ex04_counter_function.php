@@ -18,5 +18,10 @@
         }
     }
 
-    countUpTo(24, 2);
+    try {
+        countUpTo(24, 2);
+    }
+    catch (Exception $e) {
+        echo $e->getMessage();
+    }
 ?>

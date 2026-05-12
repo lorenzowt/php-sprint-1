@@ -4,12 +4,7 @@
         return rand(0,1);
     }
 
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-    echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
-
+    for ($i = 0; $i < 10; $i++){
+        echo "\n" . (isBitten() ? "it bit you" : "it didn't bite you");
+    }
 ?>
