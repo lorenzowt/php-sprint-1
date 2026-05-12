@@ -39,11 +39,15 @@ s01-04-php-oop-1/
 │   ├── ex01_employee.php
 │   └── ex02_shapes.php
 │
-├── level-2/
-│   └── ex01_poker_dice.php
+├── level-2-ex02-poker-dice/
+│   ├── main.php
+│   └── PokerDie.php
 │
-└── level-3/
-    └── ex01_cinema_catalog.php
+└── level-3-ex01-cinema-catalog/
+│   ├── main.php
+│   └── Cinema.php
+│   └── Movie.php
+│
 
 ⸻
 
