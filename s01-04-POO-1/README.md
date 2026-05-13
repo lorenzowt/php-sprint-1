@@ -31,23 +31,29 @@ php level-1/ex01_employee.php
 
 📁 Project structure
 
+📁 Project structure
+
 s01-04-php-oop-1/
 │
 ├── README.md
 │
-├── level-1/
-│   ├── ex01_employee.php
-│   └── ex02_shapes.php
+├── level-1
+│   ├── ex01-employee
+│   │   └── Employee.php
+│   │
+│   └── ex02-shapes
+│       ├── Rectangle.php
+│       ├── Shape.php
+│       └── Triangle.php
 │
-├── level-2-ex02-poker-dice/
-│   ├── main.php
-│   └── PokerDie.php
+├── level-2-ex01-poker-dice
+│   ├── PokerDie.php
+│   └── main.php
 │
-└── level-3-ex01-cinema-catalog/
-│   ├── main.php
-│   └── Cinema.php
-│   └── Movie.php
-│
+└── level-3-ex01-cinema-catalog
+    ├── Cinema.php
+    ├── Movie.php
+    └── main.php
 
 ⸻
 
