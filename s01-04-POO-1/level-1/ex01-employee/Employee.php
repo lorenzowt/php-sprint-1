@@ -21,6 +21,3 @@ class Employee {
         }
     }
 }
-
-    $example = new Employee("Lorenzo", 5000);
-    $example->checkTax();

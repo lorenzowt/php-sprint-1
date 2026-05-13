@@ -52,18 +52,28 @@
     }
 
     function showMovieByDirector(array $cinemas, string $director) {
-        
         $listOfMatches = [];
         foreach ($cinemas as $cinema) {
             $listOfMatches= array_merge($listOfMatches, $cinema->getMovieByDirector($director));
         }
 
 
+        $listOfUniqueMatches = filterDuplicates($listOfMatches);
+
+
+        echo "\nMovies by $director:";
+        foreach ($listOfUniqueMatches as $movie) {
+            echo $movie;
+            }
+
+    }
+
+    function filterDuplicates(array $array): array {
         $listOfUniqueMatches = [];
-        foreach ($listOfMatches as $cinema => $movie) {
+        foreach ($array as $movie) {
             $uniqueMovieTitle = true;
             if (count($listOfUniqueMatches) === 0 ) {
-                $listOfUniqueMatches[$cinema] = $movie;
+                $listOfUniqueMatches[] = $movie;
                 continue;
             }
             foreach($listOfUniqueMatches as $uniqueMovie) {
@@ -73,14 +83,10 @@
                 }
             }
             if($uniqueMovieTitle) {
-                $listOfUniqueMatches[$cinema] = $movie;
+                $listOfUniqueMatches[] = $movie;
             }
         }
-        echo "\nMovies by $director:";
-        foreach ($listOfUniqueMatches as $movie) {
-            echo $movie;
-            }
-
+        return $listOfUniqueMatches;
     }
 
     assignMoviesRandom($cinemas, $movies);
