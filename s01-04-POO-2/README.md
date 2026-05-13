@@ -30,20 +30,31 @@ s01-05-php-oop-2/
 │
 ├── README.md
 │
-├── level-01ex01-animals/
-│   ├── ex01_animals.php
-│   └── ex02_shapes.php
+├── level-1
+│   ├── level-1-ex01-animals
+│   │   ├── Animal.php
+│   │   ├── Cat.php
+│   │   ├── Owl.php
+│   │   ├── Snake.php
+│   │   └── main.php
+│   │
+│   └── level-1-ex02-shapes
+│       ├── Rectangle.php
+│       ├── Shape.php
+│       ├── Triangle.php
+│       └── main.php
 │
-├── level-01ex01-animals/
+├── level-2-ex01-cicle
+│   ├── Circle.php
+│   ├── Shape.php
+│   └── main.php
 │
-│
-│
-│
-├── level-2/
-│   └── ex01_circle.php
-│
-└── level-3/
-    └── ex01_notifications.php
+└── level-3-ex01-notifications
+    ├── EmailNotification.php
+    ├── Notifier.php
+    ├── OrdinaryMailNotification.php
+    ├── SmsNotification.php
+    └── main.php
 
 ⸻
 
