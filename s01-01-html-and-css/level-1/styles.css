@@ -1,10 +1,10 @@
-body {
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .page {
-    border: 3px solid black;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
@@ -17,10 +17,11 @@ body {
     background-color: black;
     padding: 1rem;
     margin: 0 auto;
+    min-height: 0;
 }
 
 header > .container {
-    min-height: 25vh;
+    /* min-height: 20vh; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1.5fr;
@@ -54,7 +55,7 @@ header > .container {
 }
 
 main > .container{
-    min-height: 25vh;
+    /* min-height: 20vh; */
     align-items: stretch;
     display: grid;
     grid-template-columns: 5fr 1fr;
@@ -65,6 +66,7 @@ main > .container{
 .articles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
     padding: 1em;
     gap: 1em;
     background-color: rgb(102, 81, 138);
@@ -93,7 +95,7 @@ main > .container{
 }
 
 footer > .container {
-    min-height: 5vh;
+    /* min-height: 3vh; */
     background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 1fr;
@@ -110,5 +112,59 @@ footer > .container {
     align-items: center;
     justify-content: flex-start;
     container-type: inline-size;
-    font-size: 3cqw;
+
 }
+
+p {
+    font-size: clamp(18px, 2cqw, 30px);
+        word-break: break-word;
+}
+
+@media (max-width: 1024px) {
+
+    header > .container {
+        min-height: none;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .top-bar {
+        grid-template-columns: 1fr;
+    }
+
+    main > .container {
+        min-height: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .articles {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+        header > .container {
+        min-height: none;
+        grid-template-rows: 1.5fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .top-bar {
+        grid-template-columns: 1fr;
+    }
+
+    main > .container {
+        min-height: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .articles {
+        grid-template-columns: 1fr;
+        
+    }
+}
+
