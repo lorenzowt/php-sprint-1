@@ -27,9 +27,7 @@ php level-1/ex01_animals.php
 📁 Project structure
 
 s01-05-php-oop-2/
-│
 ├── README.md
-│
 ├── level-1
 │   ├── level-1-ex01-animals
 │   │   ├── Animal.php
@@ -46,7 +44,9 @@ s01-05-php-oop-2/
 │
 ├── level-2-ex01-cicle
 │   ├── Circle.php
-│   ├── Shape.php
+│   ├── Rectangle.php
+│   ├── ShapeInterface.php
+│   ├── Triangle.php
 │   └── main.php
 │
 └── level-3-ex01-notifications
