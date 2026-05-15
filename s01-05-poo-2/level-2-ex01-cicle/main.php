@@ -2,9 +2,17 @@
 
     require_once "Shape.php";
     require_once "Circle.php";
+    require_once "Rectangle.php";
+    require_once "Triangle.php";
+    
+    $shapes = [
+        new Rectangle(4, 10),
+        new Triangle(7, 2),
+        new Circle(5)
+    ];
 
-    $circle1 = new Circle(5);
-
-    echo "\nThe area of the " . get_class($circle1) . " is: " . number_format($circle1->calculateArea(), 2) . "\n";
+    foreach($shapes as $shape) {
+        echo $shape;
+    }
 
 ?>
